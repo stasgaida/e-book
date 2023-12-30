@@ -1,0 +1,51 @@
+/* Body CSS */
+html,
+body {
+  height: 100%;
+  font-family: 'Arial', sans-serif; /* Измененный шрифт */
+  background-color: #f0f0f0; /* Цвет фона */
+}
+
+/* Sidebar CSS */
+#sidebar {
+  background-color: #2196F3; /* Цвет боковой панели */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mui-toolbar {
+  margin: 0 -1rem;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Content CSS */
+#content {
+  padding: 30px;
+}
+
+/* New styles for buttons */
+.custom-btn {
+  margin: 0 1rem;
+  padding: 10px 20px; /* Поля внутри кнопок */
+
+  color: white; /* Цвет текста на кнопках */
+  font-size: 24px; /* Измененный размер */
+  text-wrap: nowrap;
+
+  cursor: pointer; /* Изменяем указатель при наведении на кнопки */
+
+  border: none; /* Убираем границу у кнопок */
+  border-radius: 5px; /* Скругление углов кнопок */
+
+  background-color: #ff4081; /* Новый цвет кнопок */
+}
+
+.custom-btn:hover {
+  background-color: #f50057; /* Цвет кнопок при наведении */
+}
+
+/* ... */

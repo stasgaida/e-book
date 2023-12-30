@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-books App</title>
+    <link href="https://cdn.jsdelivr.net/npm/muicss@0.10.3/dist/css/mui.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="sidebar">
+    <div class="mui--text-light mui--text-display1 ">
+        <div class="mui-toolbar">
+            <button class="custom-btn" id="createBtn">Создать книгу</button>
+            <button class="custom-btn" id="readBtn">Просмотреть книги</button>
+            <button class="custom-btn" id="updateBtn">Обновить книгу</button>
+            <button class="custom-btn" id="deleteBtn">Удалить книгу</button>
+        </div>
+    </div>
+</div>
+<div id="content" class="mui-container-fluid">
+    <div class="mui-row">
+        <div class="mui-col-sm-12 mui-col-md-8 mui-col-md-offset-2">
+            <br>
+            <div class="mui-row">
+                <div class="mui-col-sm-10 mui-col-sm-offset-1" id="result">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./script.js" type="module"></script>
+</body>
+
+</html>
