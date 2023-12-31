@@ -1,14 +1,13 @@
-/* Body CSS */
+
 html,
 body {
   height: 100%;
-  font-family: 'Arial', sans-serif; /* Измененный шрифт */
-  background-color: #f0f0f0; /* Цвет фона */
+  font-family: 'Comic Sans MS', Comic Sans, cursive;
+  background-color: #f0f0f0;
 }
 
-/* Sidebar CSS */
 #sidebar {
-  background-color: #2196F3; /* Цвет боковой панели */
+  background-color: green;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -22,30 +21,38 @@ body {
   align-items: center;
 }
 
-/* Content CSS */
 #content {
   padding: 30px;
 }
 
-/* New styles for buttons */
 .custom-btn {
-  margin: 0 1rem;
-  padding: 10px 20px; /* Поля внутри кнопок */
+  margin: 0 1.5rem;
+  padding: 10px 20px;
 
-  color: white; /* Цвет текста на кнопках */
-  font-size: 24px; /* Измененный размер */
+  color: white;
+  font-size: 28px;
   text-wrap: nowrap;
 
-  cursor: pointer; /* Изменяем указатель при наведении на кнопки */
+  cursor: pointer;
 
-  border: none; /* Убираем границу у кнопок */
-  border-radius: 5px; /* Скругление углов кнопок */
+  border: none;
+  border-radius: 10px;
 
-  background-color: #ff4081; /* Новый цвет кнопок */
+  background-color: red;
 }
 
 .custom-btn:hover {
-  background-color: #f50057; /* Цвет кнопок при наведении */
+  background-color: darkblue;
 }
 
-/* ... */
+#submitBtn {
+  background-color: darkseagreen;
+}
+
+#updateBook {
+  background-color: darkseagreen;
+}
+
+#deleteBook{
+  background-color: darkseagreen;
+}
