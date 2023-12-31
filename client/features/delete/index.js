@@ -2,7 +2,6 @@ import { URL } from '../connection.const.js';
 import { getBook } from '../getBook.js';
 
 const removeBook = (bookIdToDelete) => {
-    // Make a DELETE request to delete a book
     fetch(`${URL}/books/${bookIdToDelete}`, {
       method: 'DELETE',
     })
@@ -11,11 +10,9 @@ const removeBook = (bookIdToDelete) => {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       console.log('Book deleted successfully');
-      // Handle the deletion success as needed
     })
     .catch(error => {
       console.error('Fetch error:', error);
-      // Handle errors
     });
 }
 
@@ -24,9 +21,9 @@ const handleRemove = (e) => {
   removeBook(bookId)
 }
 
-export const deleteBook = async () => {
-    const isDelete = 'delete';
-    await getBook(isDelete);
-    const deleteBtn = document.getElementById('deleteBook');
-    deleteBtn.addEventListener('click', handleRemove);
+export const deleteBook = async() => {
+  const isDelete = 'delete';
+  await getBook(isDelete);
+  const deleteBook = document.getElementById('deleteBook');
+  deleteBook.addEventListener('click', handleRemove);
 };

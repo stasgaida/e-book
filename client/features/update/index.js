@@ -3,7 +3,7 @@ import { getBook } from '../getBook.js';
 
 // create form 
 const createForm = () => {
-  return `
+  const newForm = `
     <form id="bookForm" class="mui-form">
       <legend>Add book</legend>
       <div class="mui-textfield">
@@ -29,10 +29,10 @@ const createForm = () => {
       </div>
     </form>
   `;
+  return newForm;
 };
 
 const getUpdateBook = () => {
-      // Make a PUT request to update a book
     fetch(`${URL}/books/${bookIdToUpdate}`, {
       method: 'PUT',
       headers: {
@@ -48,11 +48,9 @@ const getUpdateBook = () => {
     })
     .then(updatedBook => {
       console.log('Book updated successfully:', updatedBook);
-      // Handle the update success as needed
     })
     .catch(error => {
       console.error('Fetch error:', error);
-      // Handle errors
     });
 
 }

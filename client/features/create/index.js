@@ -23,10 +23,8 @@ const getData = (newBook) => {
     })
     .catch(error => {
       console.error('Fetch error:', error);
-      // Handle errors
     });
 }
-//define submit function to
 const handleSubmit = (event) => {
   event.preventDefault();
   const title = document.getElementById('title').value;
@@ -40,9 +38,9 @@ const handleSubmit = (event) => {
   getData(bookToCreate)
 };
 
-// create form 
+
 const createForm = () => {
-  return `
+  const newForm = `
     <form id="bookForm" class="mui-form">
       <legend>Add book</legend>
       <div class="mui-textfield">
@@ -69,6 +67,7 @@ const createForm = () => {
       <button id="submitBtn" class="mui-btn mui-btn--raised">Submit</button>
     </form>
   `;
+  return newForm;
 };
 
 export const createBook = () => {
@@ -76,3 +75,4 @@ export const createBook = () => {
   const submitBtn = document.getElementById('submitBtn');
   submitBtn.addEventListener('click', handleSubmit);
 };
+

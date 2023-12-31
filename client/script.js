@@ -1,17 +1,15 @@
-import { createBook } from './features/create';
-import { readBooks } from './features/read';
-import { updateBook } from './features/update';
-import { deleteBook } from './features/delete';
+import { createBook } from './features/create/index.js';
+import { readBooks } from './features/read/index.js';
+import { updateBook } from './features/update/index.js';
+import { deleteBook } from './features/delete/index.js';
 
 const Ebook = () => {
   document.addEventListener('DOMContentLoaded', () => {
-    // Знаходимо кнопки по їхніх id
     const createBtn = document.getElementById("createBtn");
     const readBtn = document.getElementById("readBtn");
     const updateBtn = document.getElementById("updateBtn");
     const deleteBtn = document.getElementById("deleteBtn");
 
-    // Додаємо обробники подій для кнопок
     createBtn.addEventListener("click", createBook);
     readBtn.addEventListener("click", readBooks);
     updateBtn.addEventListener("click", updateBook);

@@ -22,8 +22,7 @@ export const getBook = (option = false) => {
         if(option === 'update') {
           resultButton = `<button id="updateBook" value=${item._id} class="mui-btn mui-btn--danger">Edit</button>`;
         }
-
-        return `
+        const resultHtml = `
         <div class="mui--text-dark-secondary mui--text-body2" value=${item.author}>${item.author}</div>
         <div class="mui-divider"></div>
         <br>
@@ -36,6 +35,7 @@ export const getBook = (option = false) => {
         </div>
         <br>
         `;
+        return resultHtml
       });
 
       resultDiv.innerHTML = mapHtml.map(item => item);
